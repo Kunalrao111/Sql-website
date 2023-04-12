@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>PL/SQL VARIABLES</title>
+    <link rel="stylesheet" type="text/css" href="../css/sqlpagescss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Web&nbsp;Guruji</p>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../sql.html">SQL</a>
+                <a href="../plsql.html">PL/SQL</a>
+                <a href="../about.html">About</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="title">PL/SQL VARIABLES</h1>
+    <div class="wrapper">
+
+        <div class="content">
+
+            <h2>Variable:</h2>
+            <p> Variable is the name of reserved memory location. Each variable has a specific data type which
+                determines the range of values and set of operations for that variable.
+            </p>
+            <br>
+
+            <h2>PL/SQL variables naming rules:</h2>
+            <P>A variable name can't contain more than 30 characters. <BR>
+                A variable name must start with an ASCII letter followed by any number, underscore (_) or dollar sign
+                ($). <br>
+                PL/SQL is case-insensitive i.e. var and VAR refer to the same variable.</P>
+            <br>
+            <h2>How to declare variable in PL/SQL:</h2>
+            <p>We have to declare a PL/SQL variable in the declaration section or in a package as a global variable.
+                After declaration PL/SQL allocates memory for the variable and variable name is used to identify the
+                storage location.</p>
+            <strong> <i> Syntax: </i></strong>
+            <div class="syntax">
+                <p>variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value] </p> <br>
+            </div>
+            <b>Where:</b>
+            <p>variable_name is a valid identifier name. <br>
+                datatype is a valid PL/SQL datatype.</p>
+            <br>
+            <h2>Initializing Variables in PL/SQL:</h2>
+            <p>When we declare a variable PL/SQL assigns it NULL as default value. If we want to initialize a variable
+                with a non-NULL value, we can do it during the declaration. We can use any one of the following methods:
+            </p>
+            <b>1. The DEFAULT keyword</b>
+            Num1 binary_integer := 0;
+            <br>
+            <b>2. The assignment operator</b>
+            siteName varchar2(20) DEFAULT 'defvar';
+            <br>
+            <h3>Example:</h3>
+            <img src="../Images/variableplsql.png" alt="">
+            <h3>Output</h3>
+            <img src="../Images/varableplsqloutput.png" alt="">
+            <br>
+            <h2>Variable Scope in PL/SQL:</h2>
+            <p>As we discussed in earlier tutorial that PL/SQL allows the nesting of blocks i.e. blocks with blocks.
+                Based on the nesting structure PL/SQL variables can be divide into following categories:</p>
+            <b> Local variables - </b>Those variables which are declared in an inner block and not accessible to outer
+            blocks are known as local variables. <br>
+            <b>Global variables - </b>Those variables which are declared in the outer block or a package and accessible
+            to itself and inner blocks are known as global variables.
+            <br>
+            <h3>Example:</h3>
+            <img src="../Images/variableplsql2.png" alt="">
+            <h3>Output</h3>
+            <img src="../Images/varableplsqloutput2.png" alt="">
+            <br>
+
+
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>WEB GURUJI</h3>
+            <p><i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code.
+                WebGuruji focuses on providing the most efficient code or snippets as the code wants to be simple. We
+                will help programmers build up concepts in different programming languages that include C, C++, Java,
+                HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 WEBGURUJI. designed by <span>KUNAL RAO</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
