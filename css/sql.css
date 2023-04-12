@@ -69,6 +69,7 @@ nav .nav-links a:hover{
     position:relative;
     overflow: hidden;
     overflow-y: scroll;
+    
   }
   
   .wrapper .sidebar h2{
@@ -108,6 +109,8 @@ nav .nav-links a:hover{
   }
   .content{
     padding: 3%;
+    margin-left: 1%
+    ;
 
   }
   .content h2{

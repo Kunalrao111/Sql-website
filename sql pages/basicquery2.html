@@ -52,6 +52,7 @@
                             GROUP BY Fname; <br>
                         </p>
                     </div>
+                    <img src="../Images/groupby.png" alt="groupby cmd">
                 </li>
                 <li>HAVING: This clause is used to place conditions where we need to decide which group will be the part
                     of final result-set. Also, we can not use the aggregate functions like SUM(), COUNT() etc. with
@@ -72,6 +73,7 @@
                             HAVING SUM(Marks)>500;
                         </p>
                     </div>
+                    <img src="../Images/having.png" alt="having cmd">
                 </li>
                 <li>ORDER BY: This keyword is used to sort the result-set in ascending or descending order. The ORDER BY
                     keyword shall sort the records in ascending order by default. If we want to sort the records in
@@ -91,6 +93,7 @@
                             ORDER BY COUNT(StudentID) DESC;
                         </p>
                     </div>
+                    <img src="../Images/orderby.png" alt="orderby clause">
                 </li>
             </ul>
             <br><br>
@@ -116,6 +119,7 @@
                             Where Marks IS NULL; <br>
                         </p>
                     </div>
+                   <img src="../Images/null.png" alt="null">
                     <br>
                     <h3>IS NOT NULL</h3>
                     <strong> <i> Syntax: </i></strong>
@@ -132,6 +136,7 @@
                             Where Marks IS NOT NULL; <br>
                         </p>
                     </div>
+                    <img src="../Images/null2.png" alt="null">
                     <br><br>
                     <h2>UPDATE and DELETE</h2>
                     <br>
@@ -150,7 +155,9 @@
                             SET Fname = 'Robert', Lname= 'Wills' <br>
                             WHERE StudentID = 101; <br>
                         </p>
+                        <img src="../Images/update.png" alt="update cmd">
                     </div>
+                    
                     <p><strong>DELETE:</strong> The SQL DELETE command is used to delete rows that are no longer
                         required from the database tables. It deletes the whole row from the table.</p>
                     <strong> <i> Syntax: </i></strong>
@@ -164,6 +171,7 @@
                         <p>DELETE FROM Student <br>
                             WHERE FName='Robert'; <br>
                         </p>
+                        <img src="../Images/delete.png" alt="delete">
                     </div>
                     <p>There is a special case here, if we need to delete the entire table records then we have to
                         specify the table name. The data of that particular table will be divided.</p>
@@ -172,6 +180,7 @@
                     <div class="syntax">
                         <p>Delete From Student; <br>
                         </p>
+                        <img src="../Images/delete2.png" alt="">
                     </div>
 
                     <p><i>One of the major questions that arise now is: What is the difference between DELETE and
@@ -216,9 +225,10 @@
                         <p>SELECT StudentID, Fname, Lname FROM Student <br>
                             WHERE Marks BETWEEN 400 AND 500; <br>
                         </p>
+                        <img src="../Images/between.png" alt="between cmd">
                     </div>
                     <br><br>
-                    <h2>Aliases in SQL</h2>
+                    <h2>Aliases in SQL</h2> <br>
                     <p>Alias is a process of giving a table or a column a temporary name so that it helps when the query
                         is complex. It increases the readability of the query. This renaming is temporary and the table
                         name does not change in the original database. We can alias a column or a table. Below I have
@@ -245,6 +255,7 @@
                             <p>SELECT S.Fname, S.LName
                                 FROM Student as S<br>
                             </p>
+                            <img src="../Images/alias.png" alt="">
                         </div>
                     
         </div>

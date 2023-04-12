@@ -43,14 +43,16 @@
             </div>
             <strong> <i> Example: </i></strong>
             <div class="syntax">
-                <p>Select name From Student;</p>
+                <p>Select Fname From Student;</p>
             </div>
+            <img src="../Images/select.png" alt="select cmd">
             <p>The above example will display all the names from the student table. If we want to display all the fields
                 in the table then we have to use *(Star) operator. This will display the entire table.</p>
             <strong> <i> Example: </i></strong>
             <div class="syntax">
                 <p>Select * From Student;</p>
             </div>
+            <img src="../Images/select2.png" alt="select cmd">
             <p>If we want to display certain field without any duplicates then we use the DISTINCT keyword along with
                 the select command. </p>
             <strong> <i> Example: </i></strong>
@@ -73,6 +75,7 @@
                 <p>SELECT FName FROM Students <br>
                     WHERE City='Delhi';</p>
             </div>
+            <img src="../Images/where.png" alt="where cmd">
             <br><br>
             <h2>AND, OR, NOT</h2>
             <p>If we need to add two or more conditions in the where clause then we can use the above-mentioned
@@ -88,8 +91,9 @@
                     <strong> <i> Example: </i></strong>
                     <div class="syntax">
                         <p>SELECT * FROM Student <br>
-                            WHERE FName='John' AND Lname='Doe';</p>
+                            WHERE FName='Jhon' AND Lname='Doe';</p>
                     </div>
+                    <img src="../Images/and.png" alt="and operator">
                 </li>
                 <li>OR Operator: This operator displays a record if any of the conditions separated by OR is TRUE. <br>
                     <strong> <i> Syntax: </i></strong>
@@ -101,8 +105,9 @@
                     <strong> <i> Example: </i></strong>
                     <div class="syntax">
                         <p>SELECT * FROM Student <br>
-                            WHERE FName='John' OR Lname='Doe';</p>
+                            WHERE FName='Jhon' OR Lname='Doe';</p>
                     </div>
+                    <img src="../Images/or.png" alt="or operator">
                 </li>
                 <li>NOT Operator: This operator displays a record if the condition/conditions are NOT TRUE. <br>
                     <strong> <i> Syntax: </i></strong>
@@ -116,6 +121,7 @@
                         <p>SELECT * FROM Student <br>
                             WHERE NOT Lname='Doe';</p>
                     </div>
+                    <img src="../Images/not.png" alt="not operator">
                 </li>
             </ul>
 
@@ -135,6 +141,7 @@
                         <p>Insert into Student(studentID, FName, LName, Address, City, Marks) <br>
                             Values (101, 'JHON','DOE','#21, MG ROAD', 'Bengaluru', 550);</p>
                     </div>
+                    <img src="../Images/insert.png" alt="insert cmd">
                 </li>
                 <li>In this, we don't have to specify the columns of the table. But make sure the order of the values is
                     in the same order as the columns in the table. <br>
@@ -149,11 +156,13 @@
                             490);
                         </p>
                     </div>
+                    <img src="../Images/insert.png" alt="insert cmd"><br>
                     If we want to insert into specific columns then we need to follow the below method. <br>
                     <strong> <i> Example: </i></strong>
                     <div class="syntax">
                         <p>INSERT INTO Student(studentID, FName) VALUES (103, 'Mike');</p><br>
                     </div>
+                    <img src="../Images/insert2.png" alt="insert cmd">
                 </li>
             </ul>
             <br><br>
@@ -192,6 +201,7 @@
                         </p>
                     </div>
                 </li>
+                <img src="../Images/aggrigate1.png" alt="aggregate">
                 <li>SUM(): This function returns the total sum of a numeric column. <br>
                     <strong> <i> Syntax: </i></strong>
                     <div class="syntax">
@@ -235,6 +245,7 @@
                     </div>
                     Note: We have used aliasing here (AS new_name), Which we will be discussing in a short while.
                 </li>
+                <img src="../Images/aggrigate2.png" alt="aggregate">
             </ol>
 
 
